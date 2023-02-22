@@ -26,4 +26,20 @@ PostgreSQL ve C# kullanılarak yapılmış bir kütüphane-kitap sistemidir.
 -Her kütüphanenin yalnız bir adresi vardır.
 -Bir kütüphane en fazla bir fakültede bulunur.
 -Her öğrenci birden fazla kitap iste talebinde bulunabilir,hiç bulunmayadabilir.
--Bir kitabın kitap iste yalnızca bir öğrenci yapabilir.
+-Bir kitabın kitap iste yalnızca bir öğrenci yapabilir.<br>
+<br>
+İLİŞKİSEL ŞEMA<br>
+Hesap (numara:varchar, kisiadi:varchar, sifre: varchar ,mail:varchar , bolum:varchar , sınıf:varchar,
+cinsiyet:varchar)
+Emanet (Id:int, EserId:int, EmanetAlanNo:varchar, RafId:int , kitapId:int)
+Kitap ( Kitapadi:varchar , sayfasayisi:int, yazarId:int, KonuId:int, TurId:int, kitapId:int,
+RafAdres:varchar)
+YazarKitap (KitapId:int, YazarId:int)
+Yazar (YazarId:int, yazarAdı:varchar)
+hesapKutuphane (KutuphaneId:int, numara:varchar)
+Kutuphane (KutuphaneId:int, Adres: varchar, Fakulte: varchar)
+IstekKitap (kitapAdi:varchar, numara:varchar, YazarAdi:varchar)
+Raf (RafId:int, RafAdres:varchar, RafKonum:int, RafDurum:varchar, KutuphaneId:int)
+kitapKonu (KonuId:int, kitapId:int)
+Konu (KonuId:int, KonuAdi:varchar)
+Tur (TurId:int, TurAdi:varchar)
