@@ -4,6 +4,7 @@ PostgreSQL ve C# kullanılarak yapılmış bir kütüphane-kitap sistemidir.
 -Kitap isteğinde bulunabilir,
 -Kitap adını ve yerini aratabilir,
 -Kullanıcı şifresini güncelleyebilir.<br>
+<br>
 İŞ KURALLARI<br>
 -Her hesabın bir adı, numarası, maili, şifresi , bölümü, sınıfı, cinsiyeti vardır.
 -kitapId’si ,kitap adı, sayfa sayısı, yazarId’si , konuId , rafadres ve turId ' sine sahip kitaplar vardır.
